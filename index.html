@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside Realistic tattoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+
+<body>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a id="logo" href="index.html" class="active">logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a id="hoved" href="tatoveringer.html">Tatoveringer</a>
+            <a href="fanart.html">Fan-art</a>
+            <a href="portraetter.html">Portrætter</a>
+            <a href="tatoveringer.html">Praktisk</a>
+            <a id="hoved" href="booking.html">Booking</a>
+            <a id="hoved" href="wish.html">Wish list tattoo</a>
+            <a id="hoved" href="om.html">Om</a>
+            <a id="hoved" href="kontakt.html">Kontakt</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div id="desktop">
+        <ul>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="wish.html">Wish list tattoo</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li class="dropdown">
+                <a class="dropbtn"><a href="tatoveringer.html">Tatoveringer</a></a>
+                <div class="dropdown-content">
+                    <a href="fanart.html">Fan-art</a>
+                    <a href="portraetter.html">Portrætter</a>
+                    <a href="tatoveringer.html">Praktisk</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
