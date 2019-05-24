@@ -28,6 +28,7 @@ img {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 65px;
+    font-family: roboto;
 }
 
 .sidenav a {
@@ -66,16 +67,17 @@ img {
 
 span {
     position: fixed;
-    z-index: 1;
+
     right: 0;
     top: 0;
     overflow-x: hidden;
     padding-right: 1vw;
     padding-top: 1vw;
+    color: white;
 }
 
 hr {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 /*******************MENU DESKTOP******************/
@@ -90,6 +92,7 @@ ul {
     padding: 0;
     overflow: hidden;
     font-size: 1.5vw;
+    font-family: roboto;
 }
 
 li {
