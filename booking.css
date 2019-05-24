@@ -18,7 +18,7 @@ img {
 }
 
 #splash {
-    background-image: url(img/booking_mobile.png);
+    background-image: url(billeder/booking_mobile.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -199,7 +199,7 @@ li.dropdown {
     }
 
     #splash {
-        background-image: url(img/booking_desktop.png);
+        background-image: url(billeder/booking_dektop.png);
         width: 100%;
         height: 100%;
         background-size: 100%;

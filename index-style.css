@@ -17,17 +17,7 @@ img {
     width: 100%;
 }
 
-#splash {
-    background-image: url(img/forside_mobile.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    position: absolute;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-}
+
 
 /*****************ARROWS******************/
 .box {
@@ -80,6 +70,18 @@ img {
 
 
 /*******************MENU MOBILE******************/
+#splash {
+    background-image: url(img/wish_mobile.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -219,11 +221,6 @@ li.dropdown {
 
 
 
-
-
-
-
-
 /*******************MEDIAQUARIES********************/
 
 @media only screen and (min-width: 992px) {
@@ -250,7 +247,7 @@ li.dropdown {
     }
 
     #splash {
-        background-image: url(img/forside_desktop.png);
+        background-image: url(img/wish_desktop.png);
         width: 100%;
         height: 100%;
         background-size: 100%;
