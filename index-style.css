@@ -8,6 +8,7 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
     font-size: 100%;
     scroll-behavior: smooth;
 }
@@ -22,6 +23,8 @@ img {
     height: 100%;
     background-size: 100%;
     position: absolute;
+    margin: 0;
+    padding: 0;
 }
 
 /*******************MENU MOBILE******************/
@@ -146,17 +149,8 @@ li.dropdown {
 }
 
 
-
 /*****************FOOTER********************/
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-}
+
 
 
 
@@ -210,4 +204,5 @@ footer {
         background-size: 100%;
         position: absolute;
     }
+
 }
