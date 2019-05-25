@@ -17,6 +17,13 @@ img {
 }
 
 
+h1 {
+    font-family: anton;
+}
+
+p {
+    font-family: roboto;
+}
 
 /*****************ARROWS******************/
 .box {
