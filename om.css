@@ -95,7 +95,6 @@ hr {
 
 #desktop {
     display: none;
-    background-color: black;
 }
 
 ul {
@@ -142,7 +141,6 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
-    background-color: black;
 }
 
 .dropdown-content a:hover {}

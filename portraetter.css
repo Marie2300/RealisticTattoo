@@ -94,7 +94,6 @@ hr {
 /*******************MENU DESKTOP******************/
 
 #desktop {
-    background-color: black;
     display: none;
 }
 
@@ -142,7 +141,6 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
-    background-color: black;
 }
 
 .dropdown-content a:hover {}
