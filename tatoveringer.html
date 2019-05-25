@@ -74,9 +74,8 @@
         </div>
 
         <div class="tatoveringer">
-            <h1>Tatoveringer</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in dolor diam. Aenean eleifend lacus eget arcu bibendum, et elementum sapien eleifend. Phasellus et arcu et lorem vehicula pulvinar vel sed nunc. Pellentesque sed mi sed dolor molestie hendrerit. Proin quis scelerisque libero. Integer quam sapien, tincidunt id malesuada a, rutrum non odio.
-            </p>
+            <h1 class="overskrift"></h1>
+            <div class="indhold"></div>´
         </div>
 
         <div class="praktisk">
@@ -96,6 +95,23 @@
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+        start();
+
+        function start() {
+            async function getJson() {
+                let url = "http://natashahaagensen.dk/kea/tattorium/wordpress/wp-json/wp/v2/pages/9"
+                let jsonData = await fetch(url);
+                indhold = await jsonData.json();
+                visIndhold();
+            }
+
+            visIndhold();
+
+            function visIndhold() {
+                document.querySelector(".overskrift").textContent = indhold.title.rendered;
+                document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+            }
         }
 
     </script>

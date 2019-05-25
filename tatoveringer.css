@@ -352,6 +352,27 @@ button a {
         color: white;
     }
 
+    .overskrift {
+        grid-area: overskrift;
+        position: absolute;
+        top: 7vw;
+        width: 100%;
+        color: black;
+        padding-left: 1vw;
+    }
+
+
+    .indhold p {
+        position: absolute grid-area: tekst;
+        color: white;
+        margin-left: 1vw;
+        font-family: 'limestonelight';
+        font-size: 2vw;
+        padding-right: 30vw;
+        margin-top: 2vw;
+        z-index: 2;
+    }
+
     .praktisk {
         height: 400px;
         font-size: 20px;

@@ -91,7 +91,6 @@
 
     <script>
         let alleRetter = [];
-        let filter = "alle";
 
 
         document.addEventListener("DOMContentLoaded",
@@ -100,7 +99,7 @@
         function start() {
             let dest = document.querySelector("#liste");
             async function getJson() {
-                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1bg3EjadOtBuwvxHCd4epqiz_b6mi4bHti9HLxHmRp7k/edit#gid=0");
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1bg3EjadOtBuwvxHCd4epqiz_b6mi4bHti9HLxHmRp7k/");
                 alleRetter = await jsonData.json();
                 alleRetter.sort((a, b) => {
                     return (a.pris - b.pris);

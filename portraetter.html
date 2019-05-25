@@ -100,7 +100,7 @@
         function start() {
             let dest = document.querySelector("#liste");
             async function getJson() {
-                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1Dq1mQAOpCdLsMLaBPl2zvDVAAQ7RknJQZZJuc0gdP2w");
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1Dq1mQAOpCdLsMLaBPl2zvDVAAQ7RknJQZZJuc0gdP2w-1Ivpok");
                 alleRetter = await jsonData.json();
                 alleRetter.sort((a, b) => {
                     return (a.pris - b.pris);
