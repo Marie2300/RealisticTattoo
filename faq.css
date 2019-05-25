@@ -200,8 +200,10 @@ li.dropdown {
 
 
 /*****************SECTION********************/
+
+
 .splash {
-    background-image: url("billeder/tatovering_mobile.png");
+    background-image: url("billeder/faq_mobile.png");
     height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -215,12 +217,12 @@ li.dropdown {
     font-size: 12vw;
     margin: 0;
     position: relative;
-    left: 17vw;
+    left: 38vw;
     top: 20vw;
 }
 
 
-.tatoveringer {
+.faq {
     height: 500px;
     font-size: 20px;
     text-align: center;
@@ -231,53 +233,12 @@ li.dropdown {
     color: white;
 }
 
-.praktisk {
-    height: 550px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
-    padding: 50px;
-    background-color: black;
-    opacity: 0.8;
-    color: white;
-}
 
-button {
-    background-color: white;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    opacity: 0.7;
 
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
-button a {
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto";
-    padding: 15px 30px;
-}
 
-.button1 {
-    position: relative;
-    top: 35vw;
-    margin: auto;
-}
 
-.button2 {
-    position: relative;
-    top: 40vw;
-    margin: auto;
-}
 
-.button3 {
-    position: relative;
-    top: 45vw;
-    margin: auto;
-}
 
 
 
@@ -326,7 +287,7 @@ button a {
     }
 
     .splash {
-        background-image: url("billeder/tatovering_desktop.png");
+        background-image: url("billeder/faq_dektop.png");
         height: 700px;
         background-attachment: fixed;
         background-position: center;
@@ -335,7 +296,7 @@ button a {
     }
 
 
-    .tatoveringer {
+    .faq {
         height: 400px;
         font-size: 20px;
         text-align: left;
@@ -346,42 +307,13 @@ button a {
         color: white;
     }
 
-    .praktisk {
-        height: 400px;
-        font-size: 20px;
-        text-align: left;
-        line-height: 1.5;
-        padding: 50px;
-        background-color: black;
-        opacity: 0.8;
-        color: white;
-    }
 
-    button {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .button1 {
-        position: relative;
-        top: 15vw;
-    }
-
-    .button2 {
-        position: relative;
-        top: 17vw;
-    }
-
-    .button3 {
-        position: relative;
-        top: 19vw;
-    }
 
     .splash h1 {
         font-size: 6vw;
         margin: 0;
         position: relative;
-        left: 34vw;
+        left: 43.5vw;
         top: 10vw;
     }
 }
