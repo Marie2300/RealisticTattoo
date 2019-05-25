@@ -12,7 +12,10 @@
 <body>
     <header>
 
-        <div id="splash"></div>
+        <div class="box">
+            <span></span>
+            <span></span>
+        </div>
 
         <div id="mobilemenu">
             <div id="mySidenav" class="sidenav">
@@ -29,6 +32,8 @@
                 <a id="hoved" href="booking.html">BOOKING</a>
                 <hr>
                 <a id="hoved" href="wish.html">WISH LIST TATTOO</a>
+                <hr>
+                <a id="hoved" href="faq.html">F.A.Q</a>
                 <hr>
                 <a id="hoved" href="om.html">OM</a>
                 <hr>
@@ -59,6 +64,32 @@
         </div>
     </header>
 
+    <section>
+
+        <div class="splash">
+            <h1>KONTAKT</h1>
+        </div>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fnavn">Fornavn</label>
+                <input type="text" id="fname" name="firstname" placeholder="">
+
+                <label for="enavn">Efternavn</label>
+                <input type="text" id="lname" name="lastname" placeholder="">
+
+                <label for="email">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="">
+
+                <label for="subject">Din besked</label>
+                <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+
+
+    </section>
 
 
     <script>

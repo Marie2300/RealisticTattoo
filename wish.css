@@ -16,7 +16,13 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-family: anton;
+}
 
+p {
+    font-family: roboto;
+}
 
 /*****************ARROWS******************/
 .box {
@@ -197,7 +203,6 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /*****************SECTION********************/
 

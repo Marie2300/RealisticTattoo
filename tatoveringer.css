@@ -16,7 +16,14 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-family: anton;
+    font-size: 10vw;
+}
 
+p {
+    font-family: roboto;
+}
 
 /*****************ARROWS******************/
 .box {
@@ -197,7 +204,6 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 /*****************SECTION********************/
 .splash {
@@ -383,5 +389,9 @@ button a {
         position: relative;
         left: 34vw;
         top: 10vw;
+    }
+
+    h1 {
+        font-size: 3vw;
     }
 }
