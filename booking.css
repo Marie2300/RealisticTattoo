@@ -150,8 +150,8 @@ ul {
 }
 
 #desktop {
-    background-color: black;
     display: none;
+    background-color: white;
     opacity: 0.9;
 }
 
@@ -163,7 +163,7 @@ li {
 li a,
 .dropbtn {
     display: inline-block;
-    color: white;
+    color: black;
     padding: 16px 16px;
     text-decoration: none;
 }
@@ -192,12 +192,12 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    background-color: black;
+    background-color: white;
 }
 
 

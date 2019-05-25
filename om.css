@@ -139,15 +139,6 @@ hr {
 }
 
 /*******************MENU DESKTOP******************/
-<<<<<<< HEAD
-=======
-
-#desktop {
-    display: none;
-    background-color: black;
-}
-
->>>>>>> origin/master
 ul {
     list-style-type: none;
     margin: 0;
@@ -206,24 +197,13 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
-<<<<<<< HEAD
     background-color: white;
-=======
-    background-color: black;
->>>>>>> origin/master
 }
 
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-
-
-
-
-
 
 /*****************SECTION********************/
 
@@ -247,8 +227,7 @@ li.dropdown {
     top: 20vw;
 }
 
-
-.om {
+s .om {
     height: 500px;
     font-size: 20px;
     text-align: center;
