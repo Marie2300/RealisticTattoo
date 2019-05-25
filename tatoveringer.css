@@ -26,6 +26,12 @@ p {
 }
 
 /*****************ARROWS******************/
+
+.logo {
+    width: 30%;
+    position: absolute;
+}
+
 .box {
     position: absolute;
     z-index: 1;
