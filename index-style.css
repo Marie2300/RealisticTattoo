@@ -10,7 +10,7 @@ html {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    scroll-behavior: smooth;
+
 }
 
 img {
@@ -145,11 +145,6 @@ hr {
 }
 
 /*******************MENU DESKTOP******************/
-
-#desktop {
-    display: none;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -157,7 +152,15 @@ ul {
     overflow: hidden;
     font-size: 1.5vw;
     font-family: roboto;
+    opacity: 1;
 }
+
+#desktop {
+    display: none;
+    background-color: white;
+    opacity: 0.9;
+}
+
 
 li {
     float: right;
@@ -166,8 +169,8 @@ li {
 li a,
 .dropbtn {
     display: inline-block;
-    color: white;
-    padding: 14px 16px;
+    color: black;
+    padding: 16px 16px;
     text-decoration: none;
 }
 
@@ -189,11 +192,12 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    background-color: white;
 }
 
 .dropdown-content a:hover {}
@@ -203,8 +207,73 @@ li.dropdown {
 }
 
 
-/*****************FOOTER********************/
+/*****************PARALLAX********************/
 
+.parallax {
+    background-image: url("img/wish_mobile.png");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tekst {
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+}
+
+.parallax1 {
+    background-image: url("billeder/fanart_mobile.png");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tekst1 {
+    height: 550px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+}
+
+.parallax2 {
+    background-image: url("billeder/tatovering_mobile.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tekst2 {
+    height: 550px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+}
+
+
+
+
+/**************FOOTER*******************/
 
 
 
@@ -238,13 +307,9 @@ li.dropdown {
         top: 0;
         width: 100%;
         float: right;
+        z-index: 1;
     }
 
-    #desktop .drop-down {
-        color: white;
-        background-color: #776B5F;
-        text-align: center;
-    }
 
     #splash {
         background-image: url(img/wish_desktop.png);
@@ -270,5 +335,70 @@ li.dropdown {
         margin: -10px;
         animation: animate 2s infinite;
     }
+
+
+    .parallax {
+        background-image: url("img/wish_desktop.png");
+        height: 700px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .tekst {
+        height: 400px;
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 50px;
+        background-color: black;
+        opacity: 0.7;
+        color: white;
+    }
+
+    .parallax1 {
+        background-image: url("billeder/fanart_desktop.png");
+        height: 350px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .tekst1 {
+        height: 400px;
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 50px;
+        background-color: black;
+        opacity: 0.7;
+        color: white;
+    }
+
+    .parallax2 {
+        background-image: url("billeder/tatovering_desktop.png");
+        height: 450px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .tekst2 {
+        height: 400px;
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 50px;
+        background-color: black;
+        opacity: 0.7;
+        color: white;
+    }
+
+
+
 
 }
