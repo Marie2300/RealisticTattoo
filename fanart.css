@@ -155,7 +155,7 @@ li.dropdown {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5vw;
-    max-width: 900px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -295,17 +295,6 @@ h3 {
         padding-top: 70vw;
         grid-template-columns: repeat(3);
     }
-}
-
-.filter {
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-size: 14px;
-    padding: 8px;
-    color: black;
-    border: none;
 }
 
 

@@ -238,6 +238,58 @@ li.dropdown {
     color: white;
 }
 
+#liste {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5vw;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.ret {
+    margin: 2px;
+    padding: 8px;
+}
+
+#popup {
+    margin: 20rem;
+    margin-left: 50rem;
+    top: 0;
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    background-color: white;
+    display: none;
+    overflow: scroll;
+}
+
+#luk {
+    position: fixed;
+    right: 29rem;
+}
+
+#luk button {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#indhold {
+
+    display: flex;
+    height: 50vh;
+    width: 20vw;
+    margin-left: 4rem auto;
+    text-align: center;
+}
+
+#indhold p,
+h2,
+h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+
 
 
 
@@ -321,4 +373,54 @@ li.dropdown {
         left: 30vw;
         top: 10vw;
     }
+}
+
+@media only screen and (max-width: 900px) {
+
+    #liste {
+        max-width: 900px;
+    }
+
+    #indhold img {
+        max-width: 370px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets*/
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ret {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+
+    /* For computers */
+    #liste {
+        display: grid;
+        padding-top: 10vw;
+        grid-template-columns: repeat(3);
+    }
+}
+
+.filter {
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+    padding: 8px;
+    color: black;
+    border: none;
+}
+
+
+.ret img {
+    max-width: 370px;
 }

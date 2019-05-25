@@ -85,8 +85,90 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
+
+    <div id="liste"></div>
+
+    <script>
+        let alleRetter = [];
+        let filter = "alle";
+
+
+        document.addEventListener("DOMContentLoaded",
+            start);
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1Dq1mQAOpCdLsMLaBPl2zvDVAAQ7RknJQZZJuc0gdP2w");
+                alleRetter = await jsonData.json();
+                alleRetter.sort((a, b) => {
+                    return (a.pris - b.pris);
+                });
+
+                visRetter();
+            }
+
+            function visRetter() {
+                dest.innerHTML = "";
+                alleRetter.forEach(ret => {
+                    if (filter == "alle" || filter == ret.kategori) {
+                        let template =
+                            `<article class="ret">
+                                <img src="imgs/${ret.billede}" alt="${ret.navn}">
+                                <h2>${ret.navn}</h2>
+                            </article>
+                        `;
+
+
+                        // Åben pop-up
+
+                        dest.insertAdjacentHTML("beforeend", template);
+                        dest.lastElementChild.addEventListener("click", visSingle);
+
+                        // Indholdet i pop-up vinduet
+
+                        function visSingle() {
+                            document.querySelector("#indhold").innerHTML =
+
+                                `<article class="ret">
+                                    <img src="imgs/${ret.billede}" alt="${ret.navn}">
+                                    <h2>${ret.navn}</h2>
+                                </article>`;
+
+                            document.querySelector("#popup").style.display = "block";
+                            document.querySelector("#popup #luk").addEventListener("click", close);
+                        }
+
+                        function close() {
+                            document.querySelector("#popup").style.display = "none";
+                        }
+
+
+                    }
+                })
+            }
+
+            getJson();
+
+            document.querySelectorAll(".filter").forEach(but => {
+                but.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                document.querySelectorAll(".filter").forEach(but => {
+                    but.classList.remove("valgt");
+                });
+                this.classList.add("valgt");
+                document.querySelector("h1").textContent = this.textContent;
+                filter = this.getAttribute("data-hold");
+                visRetter();
+            }
+
+        }
+    </script>
+
+
 </body>
 
 </html>
