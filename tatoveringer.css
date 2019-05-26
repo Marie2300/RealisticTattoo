@@ -233,6 +233,8 @@ li.dropdown {
 
 
 .tatoveringer {
+    /** margin top: -8vw tilføjet **/
+    margin-top: -8vw;
     height: 500px;
     font-size: 20px;
     text-align: center;
@@ -254,6 +256,16 @@ li.dropdown {
     color: white;
 }
 
+/*** buttons er blevet tilføjet ***/
+
+buttons {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    top: -35vw;
+
+}
+
 button {
     background-color: white;
     border: none;
@@ -273,22 +285,36 @@ button a {
     padding: 15px 30px;
 }
 
+/*** top: -- er blevet fjernet af button1, 2 og 3 **/
+
 .button1 {
     position: relative;
-    top: 35vw;
     margin: auto;
+}
+
+/*** button1:hover, 2 og 3 er blevet tilføjet **/
+
+
+.button1:hover {
+    background-color: #BB0000;
 }
 
 .button2 {
     position: relative;
-    top: 40vw;
     margin: auto;
+}
+
+.button2:hover {
+    background-color: #BB0000;
 }
 
 .button3 {
     position: relative;
-    top: 45vw;
     margin: auto;
+}
+
+.button3:hover {
+    background-color: #BB0000;
 }
 
 
@@ -350,6 +376,8 @@ button a {
 
 
     .tatoveringer {
+        /** margin top: -8vw tilføjet **/
+        margin-top: -7vw;
         height: 400px;
         font-size: 20px;
         text-align: left;
@@ -397,19 +425,35 @@ button a {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /*** button1, 2 og 3 har fået ændret top til 25vw **/
+
     .button1 {
         position: relative;
-        top: 15vw;
+        top: 25vw;
+    }
+
+    /*** button1:hover, 2 og 3 er blevet tilføjet **/
+
+    .button1:hover {
+        background-color: #BB0000;
     }
 
     .button2 {
         position: relative;
-        top: 17vw;
+        top: 25vw;
+    }
+
+    .button2:hover {
+        background-color: #BB0000;
     }
 
     .button3 {
         position: relative;
-        top: 19vw;
+        top: 25vw;
+    }
+
+    .button3:hover {
+        background-color: #BB0000;
     }
 
     .splash h1 {
