@@ -461,7 +461,7 @@ h3 {
     /* For computers */
     #liste {
         display: grid;
-        padding-top: 70vw;
+        padding-top: 10vw;
         grid-template-columns: repeat(3);
     }
 }
