@@ -26,6 +26,7 @@ p {
 }
 
 /*****************ARROWS******************/
+
 .logo {
     width: 30%;
     position: absolute;
@@ -144,11 +145,7 @@ hr {
 }
 
 /*******************MENU DESKTOP******************/
-<<<<<<< HEAD #desktop {
-    display: none;
-}
-
-======= > > > > > > > Realistic_Tattoo/master ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -206,8 +203,7 @@ li.dropdown {
     text-decoration: none;
     display: block;
     text-align: left;
-    <<<<<<< HEAD=======background-color: white;
-    > > > > > > > Realistic_Tattoo/master
+    background-color: white;
 }
 
 
@@ -265,6 +261,7 @@ li.dropdown {
 /*******************MEDIAQUARIES********************/
 
 @media only screen and (min-width: 992px) {
+
     .mobilemenu {
         display: none;
     }
@@ -333,6 +330,12 @@ li.dropdown {
 
     h1 {
         font-size: 3vw;
+    }
+
+    .logo {
+        width: 10%;
+        position: absolute;
+        top: -0.7vw;
     }
 
 }

@@ -349,4 +349,10 @@ button a {
         left: 40vw;
         top: 10vw;
     }
+
+    .logo {
+        width: 10%;
+        position: absolute;
+        top: -0.7vw;
+    }
 }

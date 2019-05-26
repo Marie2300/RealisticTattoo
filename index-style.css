@@ -20,8 +20,10 @@ img {
 
 /*****************ARROWS******************/
 .logo {
-    width: 30%;
     position: absolute;
+    top: 25vw;
+    left: 1.5vw;
+
 }
 
 .box {
@@ -302,6 +304,14 @@ li.dropdown {
 /*******************MEDIAQUARIES********************/
 
 @media only screen and (min-width: 992px) {
+
+    .logo {
+        width: 60%;
+        position: absolute;
+        top: 9vw;
+        left: 21vw;
+    }
+
     .mobilemenu {
         display: none;
     }

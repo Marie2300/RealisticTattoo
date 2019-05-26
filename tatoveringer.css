@@ -30,11 +30,11 @@ p {
 .logo {
     width: 30%;
     position: absolute;
+    z-index: 1;
 }
 
 .box {
     position: absolute;
-    z-index: 1;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,7 +50,6 @@ p {
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
-    z-index: 1;
 
 }
 
@@ -153,6 +152,7 @@ ul {
     font-size: 1.5vw;
     font-family: roboto;
     opacity: 1;
+    z-index: -1;
 }
 
 #desktop {
@@ -194,7 +194,6 @@ li.dropdown {
     display: none;
     position: absolute;
     min-width: 160px;
-    z-index: 1;
 }
 
 .dropdown-content a {
@@ -219,6 +218,7 @@ li.dropdown {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
 .splash h1 {
@@ -295,13 +295,15 @@ button a {
 
 
 
-
-
-
-
 /*******************MEDIAQUARIES********************/
 
 @media only screen and (min-width: 992px) {
+    .logo {
+        width: 10%;
+        position: absolute;
+        top: -0.7vw;
+    }
+
     .mobilemenu {
         display: none;
     }

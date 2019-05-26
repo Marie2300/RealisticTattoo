@@ -148,7 +148,8 @@ ul {
 }
 
 #desktop {
-    display: none;background-color: white;
+    display: none;
+    background-color: white;
     opacity: 0.9;
 }
 
@@ -292,6 +293,12 @@ li.dropdown {
 /*******************MEDIAQUARIES********************/
 
 @media only screen and (min-width: 992px) {
+    .logo {
+        width: 10%;
+        position: absolute;
+        top: -0.7vw;
+    }
+
     .mobilemenu {
         display: none;
     }
